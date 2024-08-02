@@ -1,0 +1,852 @@
+@font-face {
+  font-family: china;
+  src: url(./3856NeueMachina.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: 1;
+  /* overflow-y: hidden; */
+  /* background-color: black; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+}
+/* CURSOR */
+
+.cursor {
+  height: 30px;
+  width: 30px;
+  background-color: #d9ff06;
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 100;
+  transform: translate(-50%,-50%);
+}
+
+/* PAGE 1 */
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 20;
+}
+.page1 img {
+  width: 100%;
+  height: 160%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* LOGO */
+
+.logo {
+  position: fixed;
+  top: 110px;
+  left: 60px;
+  mix-blend-mode: difference;
+  cursor: pointer;
+  z-index: 110;
+}
+.logo img {
+  /* background-color: black;
+    color: black ; */
+  width: 95px;
+}
+
+/* PAGE 1 MAIN TEXT */
+
+.page1text {
+  mix-blend-mode: difference;
+  /* border: 2px solid red; */
+  height: 80vh;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 8vw;
+  font-family: "twklausanne", Sans-serif;
+  display: inline-block;
+}
+.page1text h1 {
+  font-weight: 400;
+  text-wrap: wrap;
+  /* overflow: hidden; */
+}
+.mainheading {
+  display: flex;
+  /* position: absolute; */
+  padding: 0px;
+  width: 100%;
+
+  height: 42%;
+}
+.mainheading h1{
+  overflow: hidden;
+}
+.mainheading h1 span{
+  display: inline-block;
+}
+
+/* EMAIL */
+
+.email {
+  cursor: pointer;
+  position: fixed;
+  rotate: 270deg;
+  top: 67%;
+  left: -250px;
+  font-size: 25px;
+  font-family: china;
+  z-index: 2;
+  mix-blend-mode: difference;
+  z-index: 50;
+}
+.email h1{
+  font-weight: 100;
+}
+
+/* NAVIGATION BAR */
+.nav {
+  z-index: 50;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 80px;
+  right: 120px;
+  gap: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  mix-blend-mode: difference;
+}
+.nav h1 {
+  text-transform: uppercase;
+  font-family: china;
+  font-weight: 200;
+  font-weight: 200 !important;
+  word-spacing: 2px;
+}
+
+#page2 {
+  position: relative;
+  top: 750px;
+  width: 100%;
+  z-index: 10;
+  height: 200vh;
+  background-color: black;
+  border-radius: 200px;
+  /* z-index: 21; */
+}
+.para1 {
+  position: absolute;
+  top: 15%;
+  height: 300px;
+  width: 300px;
+
+  /* z-index: 50; */
+  font-family: "twklausanne", Sans-serif;
+  font-size: 35px;
+}
+.para1 p {
+  color: #cff306;
+}
+.text {
+  position: absolute;
+  font-size: 5vh;
+  font-family: "twklausanne", Sans-serif;
+  width: 78%;
+  top: 18%;
+}
+.text h1 {
+  font-weight: 100;
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+.text button {
+  display: flex;
+  font-size: 35px;
+  z-index: 2;
+  padding: 30px 50px;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  align-items: center;
+  gap: 40px;
+}
+.text button .buttondiv {
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #cff306;
+}
+#string {
+  height: 100px;
+  width: 80%;
+  position: absolute;
+  top: 70%;
+}
+#string svg {
+  /* background-color: #cff306; */
+  /* height: 400px; */
+  z-index: 10;
+}
+
+/* PAGE 3 */
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.page3 .p{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  width: 70%;
+  height: 20vh;
+  position: relative;
+  top: 15%;
+  align-items: center;
+  justify-content: center;
+  line-height: 250px;
+}
+.page3 h1 span{
+  display: inline-block;
+}
+.page3 span{
+  /* position: absolute; */
+  top: 40%;
+  font-size: 13vw;
+  color: white;
+  width: 8.5%;
+  z-index: 12;
+  text-align: center;
+  letter-spacing: -10px;
+  font-family: "twklausanne", Sans-serif;
+
+
+}
+
+/* PAGE 4 */
+
+.page4 {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 280vh;
+  width: 100%;
+  /* border: 2px solid red; */
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+.page4 div {
+  height: 110vh;
+  width: 45%;
+  /* border: 2px solid red; */
+  border-radius: 60px;
+  overflow: hidden;
+}
+.page4 .img1 img {
+  object-fit: cover;
+  border-radius: 60px;
+
+  height: 110vh;
+  width: 100%;
+    transition-duration: 0.3s;
+}
+.page4 .img1 img:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+.page4 .video-container video {
+  object-fit: cover;
+  border-radius: 60px;
+  height: 110vh;
+  width: 100%;
+  transition-duration: 0.3s;
+}
+.page4 .video-container video:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+.page4 .img3 img {
+  transition-duration: 0.3s;
+}
+.page4 .img3 img:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+.page4 .img4 img {
+  transition-duration: 0.3s;
+}
+.page4 .img4 img:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+.page4 #text-div1 {
+  display: flex;
+  /* border: 2px solid red; */
+  /* background-color: white; */
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 45%;
+  gap: 300px;
+  margin-top: 30px;
+}
+.page4 #text-div1 .textdiv {
+  height: 100px;
+  font-family: china;
+  font-weight: 100;
+  font-size: 30px;
+}
+.page4 #text-div1 .textdiv h1,
+.page4 #text-div1 .textdiv p {
+  font-weight: 100;
+}
+.page4 #text-div1 .textdiv h1 {
+  margin-bottom: 20px;
+}
+.page4 #text-div1 .textdiv p {
+  color: #7a7a7a;
+  font-size: 35px;
+}
+.page4 .img3 img {
+  object-fit: cover;
+  border-radius: 60px;
+
+  height: 110vh;
+  width: 100%;
+}
+.page4 .img4 img {
+  object-fit: cover;
+  border-radius: 60px;
+
+  height: 110vh;
+  width: 100%;
+}
+.page4 #text-div2 {
+  display: flex;
+  /* border: 2px solid red; */
+  /* background-color: white; */
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 95%;
+  gap: 300px;
+  margin-top: 30px;
+}
+.page4 #text-div2 .textdiv {
+  height: 100px;
+  font-family: china;
+  font-weight: 100;
+  font-size: 30px;
+}
+.page4 #text-div2 .textdiv h1,
+.page4 #text-div2 .textdiv p {
+  font-weight: 100;
+}
+.page4 #text-div2 .textdiv h1 {
+  margin-bottom: 20px;
+}
+.page4 #text-div2 .textdiv p {
+  color: #7a7a7a;
+  font-size: 35px;
+}
+
+/* PAGE 5 */
+.page5 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  background-color: black;
+}
+.page5 .page5text {
+  padding-top: 200px;
+  /* border: 2px solid red; */
+  font-size: 30px;
+  font-family: "twklausanne", Sans-serif;
+  width: 50%;
+}
+.page5 .page5text h1 {
+  font-weight: 100;
+}
+.page5 .page5button {
+  display: flex;
+  gap: 50px;
+  z-index: 2;
+  padding: 30px 50px;
+  background-color: white;
+  border-radius: 50px;
+  align-items: center;
+  /* gap: 40px; */
+  position: absolute;
+  right: 20px;
+}
+.page5 .page5button h1 {
+  font-size: 32px;
+  color: black;
+  font-family: "twklausanne", Sans-serif;
+  font-weight: 200;
+}
+.page5 .page5button .buttondiv2 {
+  height: 25px;
+  width: 25px;
+  background-color: #cff306;
+  border-radius: 50%;
+}
+#string2 {
+  height: 100px;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+}
+#string svg {
+  /* background-color: #cff306; */
+  /* height: 400px; */
+  z-index: 10;
+}
+
+/* PAGE 6 */
+.main2 {
+  background-color: black;
+  height: 280vh;
+}
+.page6 {
+  height: 280vh;
+  width: 100%;
+  background-color: #f9f7f4;
+  border-top-left-radius: 300px; /* Top-left corner radius */
+  border-top-right-radius: 300px; /* Top-right corner radius */
+  /* border: 2px solid red; */
+  position: relative;
+  /* top: -270px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.page6 .text1 {
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  /* border: 2px solid red; */
+  /* height: 70vh; */
+  width: 80%;
+  font-family: "twklausanne", Sans-serif;
+  font-size: 180px;
+  text-align: center;
+  line-height: 350px;
+}
+.page6 .text1 h1 {
+  color: black;
+  font-weight: 200;
+  letter-spacing: -20px;
+}
+.page6 .section-div {
+  height: 132vh;
+  width: 100%;
+}
+.page6 .section {
+  display: flex;
+  position: relative;
+  border-top: 2px solid black;
+  /* background-color: red; */
+  width: 90%;
+  height: 33vh;
+  top: 115vh;
+  left: 400px;
+  align-items: center;
+  font-family: "twklausanne", Sans-serif;
+}
+.page6 .section h1 {
+  font-size: 130px;
+  color: black;
+  font-weight: 100;
+  letter-spacing: -10px;
+}
+.page6 .button {
+  background-color: #d9ff06;
+  border-radius: 60px;
+  align-items: center;
+  /* justify-content: space-between; */
+  position: absolute;
+  top: 90%;
+  width: 500px;
+  height: 120px;
+  left: 40%;
+  display: flex;
+}
+.page6 .button .text {
+  position: absolute;
+  top: 33%;
+  /* border: 2px solid red; */
+  width: 350px;
+  left: 50px;
+}
+.page6 .button .text p {
+  font-size: 33px;
+  color: black;
+  font-weight: 300;
+}
+.page6 .button .circle {
+  position: absolute;
+  left: 85%;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* PAGE 7 */
+
+.page7 {
+  width: 100%;
+  background-color: #f9f7f4;
+  height: 160vh;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.page7 .text-5 {
+  width: 100%;
+  font-size: 180px;
+  margin-bottom: 200px;
+}
+.page7 .text-5 h1 {
+  font-family: "twklausanne", Sans-serif;
+  font-weight: 200;
+  color: black;
+  letter-spacing: -20px;
+  line-height: 320px;
+}
+.grid {
+  padding-left: 250px;
+  cursor: pointer;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 600px 600px 600px 600px;
+  grid-template-rows: 300px 300px 300px 300px;
+}
+.grid img {
+  width: 270px;
+}
+
+/* PAGE 8 */
+
+.page8 {
+  height: 70vh;
+  width: 100%;
+  background-color: #f9f7f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page8 .text1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+}
+.page8 .text1 h1 {
+  font-family: "twklausanne", Sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 350px;
+  letter-spacing: -10px;
+}
+
+/* PAGE 9 */
+.page9 {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  height: 135vh;
+  width: 100%;
+  background-color: #f9f7f4;
+}
+.page9 #page1 {
+  display: flex;
+  /* border: 5px solid red; */
+}
+.page9 .div1 {
+  /* position: relative;
+  top: -280px; */
+  height: 70vh;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+.page9 .div1 .awards {
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  padding-top: 50px;
+}
+.page9 .div1 .awards h1 {
+  /* padding-left: 300px; */
+  font-family: "twklausanne", Sans-serif;
+  color: #000000;
+  font-size: 140px;
+  font-weight: 100;
+  letter-spacing: -10px;
+  width: 45%;
+}
+.page9 .div1 .awards h2 {
+  text-align: center;
+  padding: 7px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  border-radius: 20px;
+  font-size: 25px;
+  width: 180px;
+  color: black;
+  font-weight: 800;
+  font-family: "twklausanne", Sans-serif;
+}
+.page9 .div1 .awards h3 {
+  font-weight: 100;
+  font-family: "twklausanne", Sans-serif;
+  position: relative;
+  top: -45px;
+  left: 250px;
+  font-size: 35px;
+  color: #0000006c;
+}
+.page9 .div1 .awards h4 {
+  font-size: 35px;
+  font-weight: 100;
+  color: #0000006c;
+  font-family: "twklausanne", Sans-serif;
+  padding-top: 200px;
+}
+.page9 .div1 p {
+  font-family: "twklausanne", Sans-serif;
+  color: #000000c5;
+  font-size: 38px;
+  line-height: 62px;
+  width: 80%;
+}
+.paradiv {
+  /* border: 2px solid red; */
+  position: relative;
+  top: -70%;
+  width: 50%;
+  left: 50%;
+}
+.page9 .div2 {
+  /* border: 2px solid red; */
+  height: 70vh;
+}
+.page9 .div2 .news {
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  padding-top: 50px;
+}
+.page9 .div2 h1 {
+  font-family: "twklausanne", Sans-serif;
+  color: #000000;
+  font-size: 130px;
+  font-weight: 100;
+  letter-spacing: -10px;
+  width: 38%;
+}
+.page9 .div2 h2 {
+  text-align: center;
+  padding: 7px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  border-radius: 20px;
+  font-size: 25px;
+  width: 180px;
+  color: black;
+  font-weight: 800;
+  font-family: "twklausanne", Sans-serif;
+}
+.page9 .div2 h3 {
+  font-weight: 100;
+  font-family: "twklausanne", Sans-serif;
+  position: relative;
+  top: -45px;
+  left: 250px;
+  font-size: 35px;
+  color: #0000006c;
+}
+.page9 .div2 h4 {
+  font-size: 35px;
+  font-weight: 100;
+  color: #0000006c;
+  font-family: "twklausanne", Sans-serif;
+  padding-top: 200px;
+}
+.page9 .div2 p {
+  font-family: "twklausanne", Sans-serif;
+  color: #000000c5;
+  font-size: 38px;
+  line-height: 62px;
+  width: 80%;
+}
+.paradiv2 {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 50%;
+  left: 44%;
+  bottom: 500px;
+}
+
+/* PAGE 10 */
+
+/* #page11 {
+  height: 100vh;
+  width: 100%;
+} */
+
+#move {
+  background-color: #d9ff06;
+  display: flex;
+  padding: 5vw;
+}
+.marque {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+  transform: translateX(-100%);
+}
+.marque img {
+  height: 80px;
+}
+.marque h1 {
+  font-size: 150px;
+  font-family: china;
+  color: #000000;
+}
+.page12 {
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+}
+.page12 .navbar {
+  display: flex;
+  width: 35%;
+  height: 20vh;
+  font-size: 35px;
+  padding: 0px 20px;
+}
+.page12 .navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  gap: 265px;
+}
+.page12 .navbar ul li {
+  color: #d9ff06;
+  font-family: "twklausanne", Sans-serif;
+}
+.page12 .nav-content {
+  width: 35%;
+  height: 60vh;
+
+  font-size: 35px;
+  display: flex;
+  gap: 300px;
+  padding: 0px 20px;
+}
+.page12 .nav-content ul {
+  font-family: "twklausanne", Sans-serif;
+  list-style: none;
+}
+.page12 .nav-content ul li {
+  padding-bottom: 60px;
+}
+.page12 .connect {
+  width: 35%;
+  height: 40vh;
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  position: relative;
+  left: 68%;
+  top: -90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page12 .connect h1 {
+  font-family: "twklausanne", Sans-serif;
+  font-size: 35px;
+  color: #d9ff06;
+  font-weight: 100;
+}
+.page12 .connect h2 {
+  text-decoration: underline;
+  font-family: "twklausanne", Sans-serif;
+  font-size: 75px;
+  font-weight: 100;
+}
+.page12 .connect h3 {
+  text-decoration: underline;
+  font-family: "twklausanne", Sans-serif;
+  font-size: 75px;
+  font-weight: 100;
+}
+.page13 {
+  height: 20vh;
+  width: 100%;
+  background-color: #000000;
+  padding: 0px 25px;
+  text-align: center;
+}
+.page13 ul {
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  font-size: 35px;
+  font-family: "twklausanne", Sans-serif;
+}
+.page13 ul li {
+  color: #dbdbdb;
+}
+.page13 a {
+  width: 100%;
+  font-size: 30px;
+  font-family: "twklausanne", Sans-serif;
+  padding-right: 100px;
+  color: #dbdbdb;
+}
